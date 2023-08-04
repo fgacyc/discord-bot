@@ -1,5 +1,5 @@
 import { RunFunction } from '../../interfaces/Event';
-import { Message, TextChannel } from 'discord.js';
+import { Message } from 'discord.js';
 import { Command } from '../../interfaces/Command';
 // import * as data from '../../../bindedRankChannels.json';
 

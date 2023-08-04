@@ -1,6 +1,11 @@
 import axios from 'axios';
 import cheerio, { Cheerio } from 'cheerio';
-import { RunFunction } from './interfaces/Command';
+
+export const formatObjectToString = (obj: Record<string, string>): string => {
+	return Object.entries(obj)
+		.map(([key, value]) => `${key}: ${value}`)
+		.join('\n');
+};
 
 export const convertTo12Hour = (time24: string) => {
 	// Parse the input time

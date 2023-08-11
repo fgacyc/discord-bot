@@ -17,7 +17,6 @@ import axios from 'axios'; // Api fetch() function
 import { convertTo12Hour, getVotd } from '../utils';
 import { run } from '../events/GuildEvents/MessageEvents';
 import { cronjob } from '../cron';
-import { initializeApp, cert } from 'firebase-admin/app';
 const globPromise = promisify(glob);
 
 const getTime = async (url: string) => {
